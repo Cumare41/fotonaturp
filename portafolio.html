@@ -27,6 +27,28 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+	<!-- Event snippet for Cliente potencial por teléfono conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11098306448/CIafCPj3iY0YEJDviqwp'});
+</script>
+
+	<!-- Event snippet for Cliente potencial por teléfono conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11098306448/CIafCPj3iY0YEJDviqwp',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
